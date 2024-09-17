@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+</head>
+<!-- MDN Reference -->
+
+<body>
+    <div>
+        <h1>Travel form to JAIPUR</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Enter your name"><br>
+            <label for="Sectionida">
+                <input type="radio" value="Section A" name="Section" id="Sectionida"> SECTION A
+            </label>
+            <label for="Sectionidb">
+                <input type="radio" value="Section B" name="Section" id="Sectionidb"> SECTION B
+            </label>
+            <label for="Sectionidc">
+                <input type="radio" value="Section C" name="Section" id="Sectionidc" class="red blue"> SECTION C<br>
+            </label>
+            <input type="checkbox" id="foodcanteen" class="red" name="Canteen">
+            <label for="foodcanteen"> Want food canteen card?</label><br>
+            <textarea name="explain" id="explain" cols="30" rows="10"
+                placeholder="Explain why you want to join?"></textarea>
+            <select name="car" id="car">
+                <option value="no car">---Select Your Car ----</option>
+                <option value="OMNI"> OMNI </option>
+                <option value="Ferrari"> Ferrari</option>
+                <option value="Dezire"> Dezire </option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Transitions </title>
+    <style>
+        .container {
+            background-color: red;
+            height: 455px;
+        }
+
+        .box {
+            border: 2px solid;
+            display: inline-block;
+            /* transform: translate(34px ,56px) rotateZ(8deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(2,7); */
+            /* transform: skew(0deg,10deg); */
+            
+        }
+
+        p {
+            width: 146px;
+            height: 116px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            transition-delay: 3s; */
+            transition: width 1s ease-in-out , height 1s ease-in;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non fuga autem, culpa,
+                corrupti adipisci, iure rem saepe magnam eaque tempore. Eligendi ea minima ipsum nihil, quia explicabo
+                distinctio sit exercitationem doloremque provident. Iste consequatur hic nulla rem blanditiis similique,
+                adipisci, ut dolor tempore facilis dolorem placeat saepe nemo omnis!</p>
+                <button id='btn'>Toggle</button>
+        </div>
+        
+    </div>
+</body>
+<script>
+    p.style.width = '146px';
+    p.style.height = '116px';
+    btn.addEventListener('click', () => {
+        p.style.height = '456px';
+        if(p.style.width === '546px'){
+            p.style.width = "146px"
+        }
+        else if(p.style.width === '146px'){
+            p.style.width = "546px"
+            p.style.height = "456px"
+
+        }
+    })
+</script>
+</html>
